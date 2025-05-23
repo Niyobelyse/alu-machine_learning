@@ -1,4 +1,4 @@
-# #!/usr/bin/env python3
+#!/usr/bin/env python3
 matrix_shape = __import__('2-size_me_please').matrix_shape
 mat1 = [[1, 2], [3, 4]]
 print(matrix_shape(mat1))
