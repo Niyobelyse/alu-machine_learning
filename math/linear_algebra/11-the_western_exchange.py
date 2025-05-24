@@ -12,4 +12,4 @@ def np_transpose(matrix):
     Returns:
         A new numpy.ndarray that is the transpose of the input matrix
     """
-    return matrix.T  
+    return matrix.T
