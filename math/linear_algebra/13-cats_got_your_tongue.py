@@ -2,6 +2,9 @@
 """
 Module that contains a function to concatenate two matrices
 """
+import numpy as np
+
+
 def np_cat(mat1, mat2, axis=0):
     """
     Concatenates two matrices along a specific axis.
@@ -14,6 +17,4 @@ def np_cat(mat1, mat2, axis=0):
         A new numpy.ndarray representing the concatenated matrix,
         or None if the matrices cannot be concatenated.
     """
-    return np_cat.concatenate((mat1, mat2), axis=axis)
-# The np_cat function uses numpy's concatenate function to join two matrices
-# along the specified axis. If the matrices cannot be concatenated,
+    return np.concatenate((mat1, mat2), axis=axis)
