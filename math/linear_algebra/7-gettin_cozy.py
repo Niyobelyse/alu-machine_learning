@@ -10,7 +10,8 @@ def cat_matrices2D(mat1, mat2, axis=0):
     Args:
         mat1: A list of lists representing a matrix.
         mat2: A list of lists representing a matrix.
-        axis: The axis along which to concatenate the matrices (0 for rows, 1 for columns).
+        axis: The axis along which to concatenate the matrices
+              (0 for rows, 1 for columns).
     Returns:
         A new list of lists representing the concatenated matrix,
         or None if the matrices cannot be concatenated.
@@ -25,4 +26,3 @@ def cat_matrices2D(mat1, mat2, axis=0):
         return [row1 + row2 for row1, row2 in zip(mat1, mat2)]
     else:
         return None
-    return None 
