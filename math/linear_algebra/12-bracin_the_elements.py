@@ -2,25 +2,13 @@
 """
 Module that contains a function to perform element-wise operations on two matrices
 """
-
-
-import numpy as np
 def np_elementwise(mat1, mat2):
     """
-    Performs element-wise addition, subtraction, multiplication, and division
-    of two matrices.
-
+    Performs element-wise addition, subtraction, multiplication, and division on two matrices.
     Args:
-        mat1: A numpy.ndarray.
-        mat2: A numpy.ndarray or a scalar.
-
+        mat1: A numpy.ndarray representing the first matrix.
+        mat2: A numpy.ndarray representing the second matrix.
     Returns:
-        A tuple containing the element-wise sum, difference, product,
-        and quotient of mat1 and mat2.
+        A tuple containing the element-wise sum, difference, product, and quotient of mat1 and mat2.
     """
-    add = np.add(mat1, mat2)
-    sub = np.subtract(mat1, mat2)
-    mul = np.multiply(mat1, mat2)
-    div = np.divide(mat1, mat2)
-    
-    return add, sub, mul, div
+    return (mat1 + mat2, mat1 - mat2, mat1 * mat2, mat1 / mat2)
