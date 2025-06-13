@@ -1,2 +1,2 @@
  #!/usr/bin/env python3
-36i - 20
+36j - 20
